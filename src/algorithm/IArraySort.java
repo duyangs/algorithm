@@ -1,9 +1,7 @@
-package sort;
+package algorithm;
 
 /**
  * @author DuYang
- * @LeetCode
- * @github
  * @date 2022/12/11
  * @description
  */

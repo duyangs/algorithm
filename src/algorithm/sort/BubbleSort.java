@@ -1,4 +1,6 @@
-package sort;
+package algorithm.sort;
+
+import algorithm.IArraySort;
 
 import java.util.Arrays;
 
@@ -7,7 +9,8 @@ import java.util.Arrays;
  * @date 2022/12/11
  * @description 冒泡排序
  */
-public class BubbleSort implements IArraySort{
+public class BubbleSort implements IArraySort {
+
 
     @Override
     public int[] sort(int[] sourceArray) throws Exception{
