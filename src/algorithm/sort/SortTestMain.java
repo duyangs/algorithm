@@ -15,7 +15,8 @@ public class SortTestMain {
         BUBBLE("Bubble sort"),
         SELECTION("Selection sort"),
         INSERT("Insert sort"),
-        SHELL("Shell sort");
+        SHELL("Shell sort"),
+        MERGE("Merge sort");
 
         private final String name;
 
@@ -63,6 +64,9 @@ public class SortTestMain {
             case SHELL: // 希尔排序
                 sorter = new ShellSort();
                 break;
+            case MERGE: // 归并排序
+                sorter = new MergeSort();
+                break;
             default:
                 sorter = null;
                 break;
@@ -76,6 +80,6 @@ public class SortTestMain {
 
     public static void main(String[] args) {
         int[] testArray = new int[]{1, 37, 25, 6, 90, 45, 32, 21, 8, 13};
-        sorterOption(SortType.SHELL, testArray);
+        sorterOption(SortType.MERGE, testArray);
     }
 }
