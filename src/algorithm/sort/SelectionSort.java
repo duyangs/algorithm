@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * @author DuYang
  * @date 2022/12/13
- * @description
+ * @description 选择排序
  */
 public class SelectionSort implements IArraySort {
 
