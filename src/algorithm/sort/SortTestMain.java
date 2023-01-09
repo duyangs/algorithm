@@ -16,7 +16,12 @@ public class SortTestMain {
         SELECTION("Selection sort"),
         INSERT("Insert sort"),
         SHELL("Shell sort"),
-        MERGE("Merge sort");
+        MERGE("Merge sort"),
+        QUICK("Quick sort"),
+        HEAP("Heap sort"),
+        COUNTING("Counting sort"),
+        BUCKET("Bucket sort"),
+        RADIX("Radix sort");
 
         private final String name;
 
@@ -67,6 +72,21 @@ public class SortTestMain {
             case MERGE: // 归并排序
                 sorter = new MergeSort();
                 break;
+            case QUICK:
+                sorter = new QuickSort();
+                break;
+            case HEAP:
+                sorter = new HeapSort();
+                break;
+            case COUNTING:
+                sorter = new CountingSort();
+                break;
+            case BUCKET:
+                sorter = new BucketSort();
+                break;
+            case RADIX:
+                sorter = new RadixSort();
+                break;
             default:
                 sorter = null;
                 break;
@@ -80,6 +100,6 @@ public class SortTestMain {
 
     public static void main(String[] args) {
         int[] testArray = new int[]{1, 37, 25, 6, 90, 45, 32, 21, 8, 13};
-        sorterOption(SortType.MERGE, testArray);
+        sorterOption(SortType.RADIX, testArray);
     }
 }
